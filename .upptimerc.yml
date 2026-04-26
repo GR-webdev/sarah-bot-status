@@ -2,25 +2,19 @@ owner: GR-webdev
 repo: sarah-bot-status
 
 sites:
-  - name: Sarah Bot (Main)
+  - name: Sarah Bot
     url: https://sarah-bot-q7vn.onrender.com/
     maxResponseTime: 10000
     expectedStatusCodes:
       - 200
 
-  # Optional: health endpoint (recommended if you can add one)
-  - name: Sarah Bot Health
-    url: https://sarah-bot-q7vn.onrender.com/health
-    maxResponseTime: 8000
+assignees:
+  - GR-webdev
 
 status-website:
-  cname: status.yourdomain.com  # optional
   name: Sarah Bot Status
-  introTitle: "Sarah Bot Uptime Monitor"
-  introMessage: "Live uptime status powered by Upptime"
-
-assignees:
-   - GR-webdev
+  introTitle: "🤖 Sarah Bot Uptime"
+  introMessage: "Live monitoring dashboard"
 
 workflowSchedule:
   uptime: "*/5 * * * *"
